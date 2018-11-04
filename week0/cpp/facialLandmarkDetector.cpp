@@ -65,10 +65,10 @@ int main(int argc, char** argv)
   shape_predictor landmarkDetector;
 
   // Load the landmark model
-  deserialize("../../common/shape_predictor_68_face_landmarks.dat") >> landmarkDetector;
+  deserialize("../../../common/shape_predictor_68_face_landmarks.dat") >> landmarkDetector;
 
   // Read Image
-  string imageFilename("../data/images/girl.jpg");
+  string imageFilename("../../data/images/girl.jpg");
   cv::Mat im = cv::imread(imageFilename);
   
   // landmarks will be stored in results/famil_0.txt
